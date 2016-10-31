@@ -6,9 +6,6 @@ export class Event {
   private static emitters: Object = window['eventQueue'] ? window['eventQueue'] : (window['eventQueue '] = {})
   private static emittersSync: Object = window['eventSyncQueue'] ? window['eventSyncQueue'] : (window['eventSyncQueue '] = {})
 
-  constructor() {
-  }
-
   public static createEmitter(id, isSync = true) {
     if (isSync != true && (typeof(Event.emitters[id]) == "undefined" || Event.emitters[id] == null)) {
       Event.emitters[id] = new EventEmitter();

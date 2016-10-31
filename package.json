@@ -1,6 +1,6 @@
 {
   "name": "angular2-emiya-event",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An customer angular2 based eventemitter with sync/async event mechanism(exp:ev.preventDefault())",
   "main": "Event.ts",
   "scripts": {
